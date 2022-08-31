@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carried Interest Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- radio -->
+  <input type="radio" id="carrydistributionRadio" name="variables" checked>
+  <label for="carrydistributionRadio">Carry distribution</label>
+
+  <input type="radio" id="initialfundvalueRadio" name="variables">
+  <label for="initialfundvalueRadio">Initial fund value</label>
+
+  <input type="radio" id="finalfundvalueRadio" name="variables">
+  <label for="finalfundvalueRadio">Final fund value</label>
+
+  <input type="radio" id="hurdlerateRadio" name="variables">
+  <label for="hurdlerateRadio">Hurdle rate</label>
+
+  <input type="radio" id="carriedinterestRadio" name="variables">
+  <label for="carriedinterestRadio">Carried interest</label><br><br>
+  <!-- end radio -->
+  
+  <label for="v1" id="variable1">Initial fund value</label>
+  <input type="number" id="v1"><br><br>
+  
+  <label for="v2" id="variable2">Final fund value</label>
+  <input type="number" id="v2"><br><br>
+  
+  <label for="v3" id="variable3">Hurdle rate</label>
+  <input type="number" id="v3"><br><br>
+  
+  <label for="v4" id="variable4">Carried interest</label>
+  <input type="number" id="v4"><br><br>
+
+  <button id="btn">compute</button>
+
+  <p id="result"></p>
+  <script src="app.js"></script>
+</body>
+</html>
